@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Joke Bin of Daniel Lopez-Klu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>The Joke Bin of Daniel Lopez-Klu</h1></div>
+    </div>
+    {% for blog_post in posts: %}
+        <div class="content">
+            <div class="card">
+                <h2>{{blog_post["title"]}}</h2>
+                <p class="text">{{blog_post["subtitle"]}}</p>
+                <a href="{{url_for('get_post', item_id=blog_post['id']) }}">Read</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+</body>
+<footer>
+    <div>
+        <p> </p>
+        <a href="https://github.com/dlopezkluever">Software Development</a> |
+        <a href="https://lopezklu.myportfolio.com">Photo/Video Work</a>
+    <p>Lopez-Klu™</p>
+    </div>
+
+</footer>
+</html>

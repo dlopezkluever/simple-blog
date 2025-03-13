@@ -1,0 +1,87 @@
+body{
+ background: #fefdfb;
+ margin: 0;
+ font-family: 'Garamond', sans-serif;
+ -webkit-font-smoothing: antialiased;
+  color:#5b351b;
+}
+.wrapper{
+  position: relative;
+  clear:both;
+  margin: 0 auto 75px auto;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  background: #00a946;
+  height: 180px;
+  border-top: 20px solid #00a946;
+}
+
+.top .title {
+  width: 700px;
+  margin: 38px auto 0 auto; 
+}
+
+.title h1 {
+  font-size:24px;
+  color:#FFF;
+  font-weight:500;
+}
+
+.content{
+    margin: -80px auto 100px;
+  padding-bottom: 20px;
+}
+
+.card{
+  position: relative;
+  background: #fff;
+  padding:50px;
+  width: 600px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+  overflow: auto; /* Allow text to expand */
+  word-wrap: break-word; /* Break long words instead of cutting them off */
+  max-height: 80vh; /* Prevents content from going beyond the viewport */
+}
+
+.card h2 {
+  font-size:21px;
+  font-weight:500;
+}
+
+.card h2 a {
+  color:#CC0000;
+  text-decoration:none;
+}
+
+.card .text {
+  color:#212121;
+  margin-top:20px;
+  font-size:15px;
+  line-height: 1.6; /* Better line height for readability */
+  overflow: visible; /* Ensure text isn't cut off */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a90063;
+  color: white;
+  text-align: center;
+}
+
+a {
+        color: #ffc402; /* Changes the link color */
+    }
+
+    a:hover {
+        color: #00a946; /* Changes color when you hover over the link */
+    }
+
+    a:active {
+        color: #00a946; /* Changes color when the link is being clicked */
+    }
